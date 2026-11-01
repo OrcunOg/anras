@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Anras | Low poly game assets for Unity</title>
+  <meta name="description" content="Anras makes mobile-ready low poly 3D asset packs for Unity. Neon City: a modular cyberpunk city where every model shares one material.">
+  <meta property="og:title" content="Anras | Low poly game assets for Unity">
+  <meta property="og:description" content="Mobile-ready low poly asset packs for Unity.">
+  <meta property="og:image" content="https://orcunog.github.io/anras/assets/og.jpg">
+  <meta property="og:url" content="https://orcunog.github.io/anras/">
+  <meta name="theme-color" content="#15173c">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="wordmark" href="./">ANRAS</a>
+      <nav aria-label="Main">
+        <a href="#neon-city">Neon City</a>
+        <a class="hide-sm" href="#specs">Specs</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="compare" id="compare">
+        <img src="assets/hero-shaded.jpg" alt="Neon City at night: an isometric low poly city block with a monorail train, glowing signs and street lights" width="1920" height="1080">
+        <img class="topology" src="assets/hero-topology.jpg" alt="The same city block drawn as a wireframe, showing every edge of the low poly meshes" width="1920" height="1080">
+        <input type="range" min="0" max="100" value="62" step="0.5" aria-label="Move the divider between the shaded view and the wireframe view">
+        <div class="divider"><div class="knob chamfer" aria-hidden="true">&#8596;</div></div>
+        <div class="view-labels" aria-hidden="true"><span>Shaded</span><span>Wireframe</span></div>
+      </div>
+      <div class="hero-copy">
+        <div class="wrap">
+          <div class="inner">
+            <h1><span class="line">Low poly cities</span><span class="line">that run on a phone.</span></h1>
+            <p>Unity asset packs by Anras. <strong>Drag across the city</strong> to see how few triangles it takes.</p>
+            <div class="actions">
+              <a class="btn primary chamfer" href="https://assetstore.unity.com/publishers/134480">Open the Asset Store page</a>
+              <a class="btn ghost chamfer" href="contact.html">Contact</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="specs" id="specs">
+      <div class="wrap">
+        <h2>One material for the whole city.</h2>
+        <p class="lede">Every building, street, vehicle, robot and character in Neon City shares a single material. Fewer materials means fewer draw calls and less memory, which is what mobile GPUs care about most.</p>
+
+        <div class="inspectors">
+          <div class="inspector">
+            <header>Mesh stats</header>
+            <dl>
+              <div class="row"><dt>Largest building</dt><dd>4,423 triangles</dd></div>
+              <div class="row"><dt>Most props</dt><dd>Under 200 triangles</dd></div>
+              <div class="row"><dt>Typical building</dt><dd>1,000 to 3,400 triangles</dd></div>
+              <div class="row"><dt>Materials</dt><dd>1, shared by every model</dd></div>
+            </dl>
+          </div>
+          <div class="inspector">
+            <header>Pack standard</header>
+            <dl>
+              <div class="row"><dt>Scale</dt><dd>1 unit = 1 meter</dd></div>
+              <div class="row"><dt>Pivots</dt><dd>Bottom center</dd></div>
+              <div class="row"><dt>Prefabs</dt><dd>Zeroed transforms, colliders on static meshes</dd></div>
+              <div class="row"><dt>Render pipeline</dt><dd>URP</dd></div>
+              <div class="row"><dt>Demo scene</dt><dd>Included</dd></div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pack" id="neon-city">
+      <div class="wrap grid">
+        <figure class="chamfer">
+          <img src="assets/neon-city.jpg" alt="Street level in Neon City: dark blue buildings under the monorail track, drawn with flat colors and black outlines" width="1200" height="1000" loading="lazy">
+        </figure>
+        <div>
+          <span class="status">In production for the Unity Asset Store</span>
+          <h2>Neon City</h2>
+          <p>A modular night city for top-down, isometric and third-person games. Snap the streets together, drop in buildings and props, and the single shared material keeps everything consistent.</p>
+          <ul class="swatch-list">
+            <li style="--c:#3ddff9">Modular buildings, streets and a monorail</li>
+            <li style="--c:#f6af45">An armored truck with gunner turret slots</li>
+            <li style="--c:#e954f4">Robots and rigged characters with animations</li>
+            <li style="--c:#41e4c8">19 buildings, each with a destroyed twin, plus rubble and debris</li>
+            <li style="--c:#eef3f7">Prefabs, colliders and a URP demo scene</li>
+          </ul>
+        </div>
+      </div>
+      <div class="wrap gallery">
+        <figure><img src="assets/vehicle.jpg" alt="An orange low poly armored truck with spiked bumpers and six wheels" width="960" height="540" loading="lazy"><figcaption>Armored truck</figcaption></figure>
+        <figure><img src="assets/robots.jpg" alt="Rows of red low poly robots arranged on a grid" width="960" height="540" loading="lazy"><figcaption>Robots</figcaption></figure>
+        <figure><img src="assets/characters.jpg" alt="Five chunky low poly characters standing in a row on a grid" width="960" height="540" loading="lazy"><figcaption>Characters</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="wrap">
+        <div class="panel chamfer">
+          <div>
+            <h2>Made by people who ship mobile games.</h2>
+            <p>We've been making mobile games for years. Every Anras pack comes out of that production work and is cleaned up so it drops straight into your project.</p>
+          </div>
+          <div>
+            <div class="mail-label">Questions, bug reports or a custom request</div>
+            <a class="mail" href="mailto:anrasofficial@gmail.com">anrasofficial@gmail.com</a>
+            <div class="small">Replies within two business days.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <span>&copy; 2026 Anras</span>
+      <nav aria-label="Footer">
+        <a href="https://assetstore.unity.com/publishers/134480">Unity Asset Store</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var box = document.getElementById('compare');
+      var range = box.querySelector('input[type="range"]');
+      function set(v) { box.style.setProperty('--pos', v + '%'); }
+      range.addEventListener('input', function () { set(range.value); });
+      set(range.value);
+      var calm = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (calm) return;
+      // One opening sweep: start fully shaded, then reveal the wireframe
+      var from = 100, to = Number(range.value), start = null, dur = 1400;
+      set(from);
+      function ease(t) { return 1 - Math.pow(1 - t, 3); }
+      function step(ts) {
+        if (start === null) start = ts;
+        var t = Math.min(1, (ts - start) / dur);
+        set(from + (to - from) * ease(t));
+        if (t < 1) requestAnimationFrame(step);
+      }
+      window.addEventListener('load', function () { setTimeout(function () { requestAnimationFrame(step); }, 350); });
+      range.addEventListener('pointerdown', function () { start = -1e9; }, { once: true });
+    })();
+  </script>
+</body>
+</html>
